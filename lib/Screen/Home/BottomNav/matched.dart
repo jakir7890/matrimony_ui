@@ -1,38 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:matrimony_ui/Screen/component/custom_container.dart';
-import 'package:matrimony_ui/const/appColor.dart';
 
-class Matches extends StatelessWidget {
-  const Matches({Key? key}) : super(key: key);
+class MatchedProfile extends StatelessWidget {
+  const MatchedProfile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.lightOrng,
-      appBar: AppBar(
-        title: const Text('Matched'),
-        backgroundColor: AppColors.lightOrng,
-        
-        actions: [
-          IconButton(onPressed: (){}, icon:const Icon(Icons.notifications)),
-          IconButton(onPressed: (){}, icon:const Icon(Icons.headset_mic)),
-        ],
-        elevation: 0,
-      ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(8),
-          child: Column(
-            children: const [
-              SizedBox(height: 10,),
-              CistomContainer(),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+          Image(image: AssetImage("assets/images/img2.jpg"),height: 200,width: 200,),
               SizedBox(height: 20,),
-              CistomContainer(),
-              SizedBox(height: 20,),
-              CistomContainer(),
-            ],
-          ),
-        ),
+              Text("No Matched Profile ! ",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold),)
+        ]),
       ),
     );
   }

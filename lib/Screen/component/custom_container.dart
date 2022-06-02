@@ -60,10 +60,12 @@ class CistomContainer extends StatelessWidget {
                 onTap: () {},
                 child: Row(
                   children: <Widget>[
-                    Icon(Icons.star_rounded, color: Colors.red),
+                    Icon(Icons.thumb_up, color: Colors.red),
+                    SizedBox(width: 4.0,),
                     Text(
-                      'Shortlist',
-                      style: TextStyle(color:  Colors.red),
+                      'Like',
+                      style: TextStyle(color:  kTextColor,
+                      fontWeight: FontWeight.bold),
                     )
                   ],
                 ),
@@ -74,9 +76,11 @@ class CistomContainer extends StatelessWidget {
                 child: Row(
                   children: <Widget>[
                     Icon(Icons.chat, color: Colors.red,size: 20),
+                    SizedBox(width: 4.0,),
                     Text(
                       'Chat Now',
-                      style: TextStyle(color: kTextLightColor),
+                      style: TextStyle(color: kTextLightColor,
+                      fontWeight: FontWeight.bold),
                     )
                   ],
                 ),
@@ -87,13 +91,15 @@ class CistomContainer extends StatelessWidget {
                 child: Row(
                   children: <Widget>[
                     Icon(
-                      Icons.subdirectory_arrow_right,
-                      color: kIconColor,
+                      Icons.send,
+                      color: Colors.red,
                       size: 20,
                     ),
+                    SizedBox(width: 4.0,),
                     Text(
                       'Send Interest',
-                      style: TextStyle(color: kTextLightColor),
+                      style: TextStyle(color: kTextLightColor,
+                      fontWeight: FontWeight.bold),
                     )
                   ],
                 ),
