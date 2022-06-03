@@ -12,7 +12,7 @@ class MatchedProfile extends StatelessWidget {
             children: [
           Image(image: AssetImage("assets/images/img2.jpg"),height: 200,width: 200,),
               SizedBox(height: 20,),
-              Text("No Matched Profile ! ",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold),)
+              Text("There is None ! ",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold),)
         ]),
       ),
     );

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:matrimony_ui/Screen/profile_create.dart';
 import 'package:matrimony_ui/const/appColor.dart';
 import 'package:matrimony_ui/const/screenNavigation.dart';
@@ -31,15 +31,11 @@ class SingIn extends StatelessWidget {
                     ),),
                   ),
                   Spacer(),
-                  ElevatedButton.icon(
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.white,
-                      onPrimary: Colors.black,
-                      minimumSize: Size(double.infinity, 50),
-                    ),
-                    icon: FaIcon(FontAwesomeIcons.google, color: Colors.red,),
-                    onPressed: () {}, label: Text("Sing In with Google")),
-                    const Spacer(),
+                  SignInButton(
+                    Buttons.Google, 
+                    text: "Sign In with Google",
+                  onPressed: (){}),
+                     SizedBox(height: 30,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -57,11 +53,11 @@ class SingIn extends StatelessWidget {
                           child: const Text(
                             "Create Profile",
                             style: TextStyle(
-                              fontSize: 12,
+                              fontSize: 14,
                               decoration: TextDecoration.underline,
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,
-                                color: Colors.black87),
+                                color: Colors.green),
                           ),
                         ),
                       ],

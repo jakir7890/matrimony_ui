@@ -27,35 +27,16 @@ class _BottomNavBarState extends State<BottomNavBar> {
 
     return Scaffold(
       backgroundColor: kPrimaryColor,
-      appBar: AppBar(
-        title: Text('Home'),
-        backgroundColor: kSecondaryColor,
-        automaticallyImplyLeading: false,
-        centerTitle: true,
-        actions: [
-          IconButton(
-              onPressed: () {
-                final snackBar = SnackBar(
-                  content: Text("No notification here.",
-                      textAlign: TextAlign.center),
-                  duration: Duration(seconds: 1),
-                  backgroundColor: kSecondaryColor,
-                );
-                ScaffoldMessenger.of(context).showSnackBar(snackBar);
-              },
-              icon: Icon(Icons.notifications)),
-          IconButton(onPressed: () {
-            final snackBar = SnackBar(
-              content: Text("The helpline is temporarily closed :(",
-                  textAlign: TextAlign.center),
-              duration: Duration(seconds: 1),
-              backgroundColor: kSecondaryColor,
-            );
-            ScaffoldMessenger.of(context).showSnackBar(snackBar);
-          }, icon: Icon(Icons.headset_mic)),
-        ],
-        elevation: 0,
-      ),
+      // appBar: AppBar(
+      //   title: Text('Home'),
+      //   backgroundColor: kSecondaryColor,
+      //   automaticallyImplyLeading: false,
+      //   centerTitle: true,
+      //   actions: [
+          
+      //   ],
+      //   elevation: 0,
+      // ),
       body: screens[index],
       bottomNavigationBar: NavigationBarTheme(
         data: NavigationBarThemeData(
@@ -69,7 +50,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           destinations: [
             NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
             NavigationDestination(
-                icon: Icon(Icons.join_full_outlined), label: 'Matched Profile'),
+                icon: Icon(Icons.card_giftcard_outlined), label: ' Membership'),
             NavigationDestination(
                 icon: Icon(Icons.chat_bubble_outline), label: 'Chats'),
             NavigationDestination(

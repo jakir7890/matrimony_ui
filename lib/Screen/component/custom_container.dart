@@ -60,7 +60,7 @@ class CistomContainer extends StatelessWidget {
                 onTap: () {},
                 child: Row(
                   children: <Widget>[
-                    Icon(Icons.thumb_up, color: Colors.red),
+                    Icon(Icons.favorite, color: Colors.red),
                     SizedBox(width: 4.0,),
                     Text(
                       'Like',
