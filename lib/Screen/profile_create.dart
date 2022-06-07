@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:matrimony_ui/Screen/Home/BottomNav/bottomNav_controller.dart';
 import 'package:matrimony_ui/Screen/component/radiobutton.dart';
 import 'package:matrimony_ui/const/appColor.dart';
@@ -66,9 +67,7 @@ class ProfileCreate extends StatelessWidget {
             
           ),
           onPressed: () {
-              Navigator.push(
-                context, 
-                MaterialPageRoute(builder: ((context) => const BottomNavBar())));
+           Get.to(BottomNavBar());
 
           }, 
           child: Text("Create Acount", style: TextStyle(fontSize: 20),))

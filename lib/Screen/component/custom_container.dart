@@ -1,6 +1,8 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:matrimony_ui/Screen/Home/detailspage.dart';
 import 'package:matrimony_ui/const/appColor.dart';
 
 class CistomContainer extends StatelessWidget {
@@ -22,34 +24,37 @@ class CistomContainer extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(children: [
-          Row(
-            //crossAxisAlignment: CrossAxisAlignment.end,
-            //mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              CircleAvatar(
-                radius: 40,
-                backgroundImage: AssetImage('assets/images/img1.jpg'),
-              ),
-              SizedBox(
-                width: 20,
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                //mainAxisAlignment: MainAxisAlignment.,
-                children: [
-                  Text('BGD125485'),
-                  Text(
-                    "Rayhana Lima",
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  SizedBox(
-                    height: 8,
-                  ),
-                  Text(
-                      "25 yrs. 4 ft 11 in / 149 cm. \nSunni.Unmarried. Bachelors. \nNot working,Narayanganj.\nDhaka, Bangladesh")
-                ],
-              )
-            ],
+          GestureDetector(
+            onTap: () => Get.to(DetailsPage()),
+            child: Row(
+              //crossAxisAlignment: CrossAxisAlignment.end,
+              //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                CircleAvatar(
+                  radius: 40,
+                  backgroundImage: AssetImage('assets/images/img1.jpg'),
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  //mainAxisAlignment: MainAxisAlignment.,
+                  children: [
+                    Text('BGD125485'),
+                    Text(
+                      "Rayhana Lima",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    Text(
+                        "25 yrs. 4 ft 11 in / 149 cm. \nSunni.Unmarried. Bachelors. \nNot working,Narayanganj.\nDhaka, Bangladesh")
+                  ],
+                )
+              ],
+            ),
           ),
           Divider(endIndent: 10, indent: 10, thickness: 1.5, height: 10),
           Row(

@@ -1,18 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:matrimony_ui/Screen/Home/BottomNav/bottomNav_controller.dart';
 import 'package:matrimony_ui/Screen/Home/BottomNav/signIn.dart';
+import 'package:matrimony_ui/Screen/Home/detailspage.dart';
+import 'package:matrimony_ui/Screen/profile_create.dart';
 // import 'package:matrimony_ui/Screen/profile_create.dart';
 
 void main (){
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+   MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const SingIn(),
+      home:  SingIn(),
+       getPages: [
+        GetPage(name: '/profilecreate', page: () => const ProfileCreate(),),
+        GetPage(name: '/bottomnavbar', page: () => const BottomNavBar(),),
+        GetPage(name: '/detailspage', page: () => const DetailsPage(),),
+      
+      ],
     );
   }
 }

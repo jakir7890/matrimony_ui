@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
+import 'package:get/get.dart';
 import 'package:matrimony_ui/Screen/profile_create.dart';
 import 'package:matrimony_ui/const/appColor.dart';
 import 'package:matrimony_ui/const/screenNavigation.dart';
@@ -48,7 +49,7 @@ class SingIn extends StatelessWidget {
                         ),
                         InkWell(
                           onTap: () {
-                            navigateToNextSceen(context, ProfileCreate());
+                            Get.to(ProfileCreate());
                           },
                           child: const Text(
                             "Create Profile",
