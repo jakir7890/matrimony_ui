@@ -31,6 +31,10 @@ dependencies:
   flutter_signin_button: ^2.0.0
   floating_bottom_navigation_bar: ^1.5.2
   get: ^4.6.5
+  grouped_list: ^5.1.1
+  intl: ^0.17.0
+
+  
   flutter:
     sdk: flutter
   

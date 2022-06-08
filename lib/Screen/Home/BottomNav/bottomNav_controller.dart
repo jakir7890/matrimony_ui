@@ -16,9 +16,10 @@ class BottomNavBar extends StatefulWidget {
 
 class _BottomNavBarState extends State<BottomNavBar> {
      int index = 0;
-  final screens = const [Home(),
+  final screens =  [
+                  Home(),
                   MatchedProfile(),
-                  Chats(),                 
+                  ChatPage(),                 
                   Profile()
                   ];
 
