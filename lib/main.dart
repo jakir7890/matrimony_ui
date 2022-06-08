@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:matrimony_ui/Screen/Home/BottomNav/bottomNav_controller.dart';
 import 'package:matrimony_ui/Screen/Home/BottomNav/signIn.dart';
 import 'package:matrimony_ui/Screen/Home/detailspage.dart';
+import 'package:matrimony_ui/Screen/login_sing_up/Screens/welcome/welcome_screen.dart';
 import 'package:matrimony_ui/Screen/profile_create.dart';
 // import 'package:matrimony_ui/Screen/profile_create.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home:  SingIn(),
+      home:  WelcomePage(),
        getPages: [
         GetPage(name: '/profilecreate', page: () => const ProfileCreate(),),
         GetPage(name: '/bottomnavbar', page: () => const BottomNavBar(),),

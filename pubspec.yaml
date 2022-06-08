@@ -33,6 +33,7 @@ dependencies:
   get: ^4.6.5
   grouped_list: ^5.1.1
   intl: ^0.17.0
+  country_code_picker: ^2.0.2
 
   
   flutter:
