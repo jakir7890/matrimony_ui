@@ -18,8 +18,9 @@ class _BottomNavBarState extends State<BottomNavBar> {
      int index = 0;
   final screens = const [Home(),
                   MatchedProfile(),
-                  Chats(), 
-                  Profile()];
+                  Chats(),                 
+                  Profile()
+                  ];
 
   @override
   Widget build(BuildContext context) {
